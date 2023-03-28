@@ -1,0 +1,37 @@
+
+
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 2px 0px  grey;
+    padding: 10px;
+}
+.HI{
+    display:flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.demos{
+    color: #766df4;
+}
+.textos{
+    color: #737491;
+    display: flex;
+    justify-content: space-around;
+
+}
+.IP{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.icono{
+    width: 90px;
+    height: 90px;
+    padding-left: 20px;
+}
+.icono img{
+    box-shadow: 0px 0px 10px grey;
+}
