@@ -1,8 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 :root{
     --Color-texto-1: #766df4;
     --Color-texto-2: #737491;
     --Background-color-1: #f7f7fc;
     --Background-color-2: #37384e;
+}
+
+.texto{
+    margin-left: 10%;
+    width: 50%;
 }
 
 .mid{
@@ -11,6 +19,7 @@
 .señora{
     display: flex;
     border-radius: 0.5rem;
+    margin-left: 2%;
 }
 .platos{
     display: flex;
