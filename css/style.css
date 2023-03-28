@@ -1,0 +1,17 @@
+:root{
+    --Color-texto-1: #766df4;
+    --Color-texto-2: #737491;
+    --Background-color-1: #f7f7fc;
+    --Background-color-2: #37384e;
+}
+
+.mid{
+    background-color: #f7f7fc;
+}
+.señora{
+    display: flex;
+    border-radius: 0.5rem;
+}
+.platos{
+    display: flex;
+}
