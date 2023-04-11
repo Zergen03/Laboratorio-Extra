@@ -81,3 +81,111 @@
     height: 100%;
 }
 
+/*Footer*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/*Footer*/
+.footer{
+    font-family: Roboto;
+    font-weight: 400;
+    display: grid;
+    grid-template-rows: 150px 50px;
+    align-items: center;
+    height: 200px;
+    width: 100%;
+    background-color: #37384e;
+    color: white;
+    font-size: 15px;
+}
+
+.footer h3{
+}
+
+.footer span{
+    font-size: 13px;
+}
+
+.mail{
+    display: flex;
+}
+
+.informacion{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-areas: "contacts follow subscribe" ;
+}
+
+.contacts{
+    grid-area: contacts;
+}
+
+.follow{
+    grid-area: follow;
+    
+}
+
+.iconos{
+    display: flex;
+    flex-direction: row;
+}
+.subscribe{
+    grid-area: subscribe;
+
+}
+
+.derechos{
+    display: flex;
+    align-items: end;
+    margin-left: 15px;
+}
+
+.enviar{
+    display: flex;
+    justify-content: start;
+    align-items: end;
+}
+
+.formulario{
+    display: inline-block;
+    margin: 0px;
+    width: 60%;
+    height: 40px;
+    border-radius: 15px 0px 0px 15px;
+    border: 0px;
+}
+
+.boton{
+    display: inline-block;
+    width: 30%;
+    height: 42px;
+    border-radius: 0px 15px 15px 0px;
+    background-color: #766df4;
+    border: 0px;
+    color: white;
+    font-size: 17px;
+}
+
+.mail img,
+.telefono img,
+.derechos img{
+    width: 20px;
+    height: 20px;
+}
+
+
+.icono{
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    padding: 5px;
+    padding-top: 5px;
+    box-shadow: 0px 0px 2px rgb(128, 128, 128);
+    margin-left: 10px;
+}
+
+.icono img{
+    width: 100%;
+    height: 100%;
+}
