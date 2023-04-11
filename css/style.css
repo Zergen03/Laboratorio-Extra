@@ -11,6 +11,13 @@
 .texto{
     margin-left: 10%;
     width: 50%;
+    align-self: center;
+}
+.boton{
+    width: 90%;
+    border-radius: 0.3rem;
+    border: 0;
+    background-color: #766df4;
 }
 
 .mid{
@@ -18,9 +25,12 @@
 }
 .señora{
     display: flex;
-    border-radius: 0.5rem;
     margin-left: 2%;
 }
 .platos{
     display: flex;
+}
+
+.imagen{
+    border-radius: 0.5rem;
 }
