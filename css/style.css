@@ -14,23 +14,43 @@
     align-self: center;
 }
 .boton{
-    width: 90%;
+    width: 30%;
+    height: 28px;
     border-radius: 0.3rem;
     border: 0;
+    color: white;
     background-color: #766df4;
 }
 
 .mid{
-    background-color: #f7f7fc;
 }
 .señora{
+    background-color: #f7f7fc;
     display: flex;
     margin-left: 2%;
 }
 .platos{
+    border:#7e7e7e 1px solid;
     display: flex;
+    margin-left: 1%;
 }
 
 .imagen{
     border-radius: 0.5rem;
+}
+
+.imagenesPlatos{
+    width: 500px;
+    border-top-left-radius: 0.8rem;
+    border-bottom-left-radius: 0.8rem;
+}
+
+.iconos{
+    width: 10px;
+     height: 10px;
+}
+
+.fecha{
+    display: flex;
+    flex-direction: row-reverse;
 }
