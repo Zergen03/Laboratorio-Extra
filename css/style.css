@@ -1,19 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-:root{
+:root {
     --Color-texto-1: #766df4;
     --Color-texto-2: #737491;
     --Background-color-1: #f7f7fc;
     --Background-color-2: #37384e;
 }
 
-.texto{
+.texto {
     margin-left: 10%;
     width: 50%;
     align-self: center;
 }
-.boton{
+
+.boton {
     width: 30%;
     height: 28px;
     border-radius: 0.3rem;
@@ -22,35 +23,48 @@
     background-color: #766df4;
 }
 
-.mid{
-}
-.señora{
+.mid {}
+
+.señora {
     background-color: #f7f7fc;
     display: flex;
     margin-left: 2%;
 }
-.platos{
-    border:#7e7e7e 1px solid;
+
+.platos {
+    border-radius: 0.8rem;
+    border: #7e7e7e9d 1px solid;
     display: flex;
     margin-left: 1%;
 }
 
-.imagen{
+.imagen {
     border-radius: 0.5rem;
 }
 
-.imagenesPlatos{
+.imagenesPlatos {
     width: 500px;
     border-top-left-radius: 0.8rem;
     border-bottom-left-radius: 0.8rem;
 }
 
-.iconos{
+.iconos {
     width: 10px;
-     height: 10px;
+    height: 10px;
+
 }
 
-.fecha{
+.fecha {
     display: flex;
     flex-direction: row-reverse;
+    color: grey;
+    font-size: small;
+    display: flex;
+    align-items: center;
+}
+
+.preparacion{
+    display: flex;
+    align-items: center;
+    color: #7e7e7e9d;
 }
