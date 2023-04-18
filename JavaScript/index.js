@@ -45,6 +45,7 @@ function elegirPagina(valor) {
                 if (paginaActual < 3) {
                     elegirPagina(paginaActual + 1);
                 }
+                break;
             default:
                 for (i = 1; i <= 3; i++) {
                     if (i == valor) {
@@ -53,6 +54,7 @@ function elegirPagina(valor) {
                         document.getElementById("imagen" + i).style.display = "none";
                     }
                 }
+                break;
         }
 
 
