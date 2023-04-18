@@ -1,39 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./Css/General.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <script src="./JavaScript/index.js"></script>
+
 </head>
-<body>
+
+<body onload="cambiarCantidadPaginas()">
     <div class="general">
         <div class="header">
             <div class="HI">
-
+                <div class="IP">
+                    <img src="./recursos/logo-icon.png" alt="" class="iconoI">
+                    <div class="Around"> Around </div>
+                </div>
+                <div class="textosH">
+                    <div class="demos"> Demos</div>
+                    <div class="textoH"> Templates</div>
+                    <div class="textoH"> Account</div>
+                    <div class="textoH"> Pages</div>
+                    <div class="textoH">Doc/UI kit</div>
+                </div>
             </div>
             <div class="HD">
-
+                <div class="lupa">
+                    <img src="./recursos/lupa.png" alt="" >
+                </div>
+                <div class="icono">
+                    <img src="./recursos/facebook.png" alt="" >
+                </div>
+                <div class="icono">
+                    <img src="./recursos/twitter.png" alt="" >
+                </div>
+                <div class="icono">
+                    <img src="./recursos/instagram.png" alt="" >
+                </div>
+                <div class="icono">
+                    <img src="./recursos/pinterest.png" alt="" >
+                </div>
             </div>
         </div>
-        <div class="main">
+        <div class="mid">
             <div class="comidas">
+                <div class="señora">
+                    <div class="imagen">
+                        <img src="./recursos/bg-food.jpeg" style="width: 400px; border-radius: 0.8rem;">
+                    </div>
+                    <div class="texto">
+                        <h2 class="letrasT">Hi! I am Amelie</h2>
+                        <p>Amateur chef and creator of this blog</p>
+                        <p class="letras">
+                            At vero eos et accusamus et íusto odio dignissimos ducimus qui blanditiis praesentium
+                            voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sínt occaecati
+                            cupiditate non provident, símilique sunt in culpa qui officia deserunt mollitia animi, id
+                            est laborum et dolorum fuga. Et harum quidem rerum facílis est et expedita distinctio.
+                        </p>
+                        <input type="button" id="" value="Get to know me better" class="boton" onclick="alert('encontraste un easter egg <3')">
 
+                    </div>
+
+                </div>
+                <br><br>
+                <div class="platos" id="imagen1">
+                    <img src="./recursos/image-01.png" class="imagenesPlatos">
+                    <div class="texto">
+
+                        <div class="preparacion">
+                            <img src="./recursos/reloj.png" class="iconosMid">
+                            <p>10 min -- 6-8 portions</p>
+                        </div>
+
+                        <h1 class="letrasT">Asian Chilli Garlic Shrimps</h1>
+                        <p class="letras">
+                            Dignissim suspendisse in est ante in nibh mauris cursus mattis. Tempor id eu nisl nunc mi.
+                            Scelerisque eu ultrices vitae auctor. Ut faucibus pulvinar elementum integer. Sed vulputate
+                            mi
+                            sit amet mauris commodo. In eu mi bibendum neque...
+                        </p>
+                        <div class="fecha">
+                            4
+                            <img src="./recursos/chat.png" class="iconosMid">
+                            Oct 29 |
+                            <img src="./recursos/calendario.png" class="iconosMid">
+                            <p></p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <br><br>
+
+                <div class="platos" id="imagen2">
+                    <img src="./recursos/image-02.png" class="imagenesPlatos">
+                    <div class="texto">
+
+                        <div class="preparacion">
+                            <img src="./recursos/camara.webp" class="iconosMid">
+                            <p>12:49</p>
+                        </div>
+
+                        <h1 class="letrasT">Asian Chilli Garlic Shrimps</h1>
+                        <p class="letras">
+                            Dignissim suspendisse in est ante in nibh mauris cursus mattis. Tempor id eu nisl nunc mi.
+                            Scelerisque eu ultrices vitae auctor. Ut faucibus pulvinar elementum integer. Sed vulputate
+                            mi
+                            sit amet mauris commodo. In eu mi bibendum neque...
+                        </p>
+                        <div class="fecha">
+                            2
+                            <img src="./recursos/chat.png" class="iconosMid">
+                            Oct 17 |
+                            <img src="./recursos/calendario.png" class="iconosMid">
+                            <p></p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <br><br>
+
+                <div class="platos" id="imagen3">
+                    <img src="./recursos/image-03.png" class="imagenesPlatos">
+                    <div class="texto">
+
+                        <div class="preparacion">
+                            <img src="./recursos/reloj.png" class="iconosMid">
+                            <p>10 min -- 2-4 portions</p>
+                        </div>
+
+                        <h1 class="letrasT">Asian Chilli Garlic Shrimps</h1>
+                        <p class="letras">
+                            Dignissim suspendisse in est ante in nibh mauris cursus mattis. Tempor id eu nisl nunc mi.
+                            Scelerisque eu ultrices vitae auctor. Ut faucibus pulvinar elementum integer. Sed vulputate
+                            mi
+                            sit amet mauris commodo. In eu mi bibendum neque...
+                        </p>
+                        <div class="fecha">
+                            1
+                            <img src="./recursos/chat.png" class="iconosMid">
+                            Oct 2 |
+                            <img src="./recursos/calendario.png" class="iconosMid">
+                            <p></p>
+                        </div>
+                    </div>
+
+                </div>
             </div>
             <div class="paginas">
+                <div>
+                    show
+                    <select id="numeroOpciones" onchange="cambiarCantidadPaginas()">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3" selected>3</option>
+                    </select>
+                    post per page
+                </div>
+                <div class="seleccionPaginas" id="seleccionPaginas">
+                    <input type="button" value="<" class="botonesPaginas" onclick="elegirPagina(-1)">
+                    <input type="button" value="1" class="botonesPaginas" id="seleccionPaginas1"
+                        onclick="elegirPagina(parseInt(this.value))" style="border: 2px solid black;">
+                    <input type="button" value="2" class="botonesPaginas" id="seleccionPaginas2"
+                        onclick="elegirPagina(parseInt(this.value))">
+                    <input type="button" value="3" class="botonesPaginas" id="seleccionPaginas3"
+                        onclick="elegirPagina(parseInt(this.value))">
+                    <input type="button" value=">" class="botonesPaginas" onclick="elegirPagina(0)">
+                </div>
 
             </div>
 
         </div>
         <div class="footer">
             <div class="informacion">
-
+                <div class="contacts">
+                    <h3>Contacts</h3>
+                    <div class="mail">
+                        <img src="./recursos/email-blanco.png" alt="" >
+                        amelie.chef@example.com
+                    </div>
+                    <div class="telefono">
+                        <img src="./recursos/telefono.png" alt="" >
+                        910-784-8015
+                    </div>
+                </div>
+                <div class="follow">
+                    <h3>Follow</h3>
+                    <div class="iconosFooter">
+                        <div class="icono">
+                            <img src="./recursos/facebook-blanco.png" alt="" >
+                        </div>
+                        <div class="icono">
+                            <img src="./recursos/twitter-blanco.png" alt="" >
+                        </div>
+                        <div class="icono">
+                            <img src="./recursos/instagram-blanco.png" alt="" >
+                        </div>
+                        <div class="icono">
+                            <img src="./recursos/pinterest-blanco.png" alt="" >
+                        </div>
+                    </div>
+                </div>
+                <div class="subscribe">
+                    <h3>Subscribe and never miss a post!</h3>
+                    <div class="enviar">
+                        <input class="formulario" type="text" name="" placeholder="Your email"> 
+                        <button class="botonF">Subscribe *</button> 
+                    </div>    
+                    <br><span>* Subscribe to our newsletter to receive early discount offers, updates and new products info</span>
+                </div>
             </div>
             <div class="derechos">
-
+                <img src="./recursos/copyright.png" alt="">
+                All rights reserved. Made by Createx Studio <span></span>
             </div>
         </div>
     </div>
-</body>
+</body> 
 </html>
