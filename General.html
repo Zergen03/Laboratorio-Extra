@@ -8,66 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css">
 
-    <script>
-        var paginaActual = 1;
-        var paginas;
-        function cambiarCantidadPaginas() {
-            if (document.getElementById("numeroOpciones").value == 3) {
-                paginas = 3;
-                document.getElementById("seleccionPaginas").style.display = "none";
-                document.getElementById("imagen3").style.display = "";
-                document.getElementById("imagen2").style.display = "";
-                document.getElementById("imagen1").style.display = "";
-
-            } else if (document.getElementById("numeroOpciones").value == 2) {
-                paginas = 2;
-                document.getElementById("seleccionPaginas").style.display = "";
-                document.getElementById("seleccionPaginas3").style.display = "none";
-                document.getElementById("imagen3").style.display = "none";
-                document.getElementById("imagen2").style.display = "";
-                document.getElementById("imagen1").style.display = "";
-
-            } else {
-                paginas = 1;
-                document.getElementById("seleccionPaginas").style.display = "";
-                document.getElementById("seleccionPaginas3").style.display = "";
-                document.getElementById("imagen3").style.display = "none";
-                document.getElementById("imagen2").style.display = "none";
-                document.getElementById("imagen1").style.display = "";
-            }
-        }
-
-        function elegirPagina(valor) {
-            paginaActual = valor;
-
-            if (paginas == 1) {
-                if (paginaActual == 1) {
-                    document.getElementById("imagen3").style.display = "none";
-                    document.getElementById("imagen2").style.display = "none";
-                    document.getElementById("imagen1").style.display = "";
-                } else if (paginaActual == 2) {
-                    document.getElementById("imagen3").style.display = "none";
-                    document.getElementById("imagen2").style.display = "";
-                    document.getElementById("imagen1").style.display = "none";
-                } else {
-                    document.getElementById("imagen3").style.display = "";
-                    document.getElementById("imagen2").style.display = "none";
-                    document.getElementById("imagen1").style.display = "none";
-                }
-            } else if (paginas == 2) {
-                if (paginaActual == 1) {
-                    document.getElementById("imagen3").style.display = "none";
-                    document.getElementById("imagen2").style.display = "";
-                    document.getElementById("imagen1").style.display = "";
-                } else {
-                    document.getElementById("imagen3").style.display = "";
-                    document.getElementById("imagen2").style.display = "none";
-                    document.getElementById("imagen1").style.display = "none";
-                }
-            }
-
-        }
-    </script>
+    <script src="./JavaScript/index.js"></script>
 
 </head>
 
@@ -120,7 +61,7 @@
                             cupiditate non provident, símilique sunt in culpa qui officia deserunt mollitia animi, id
                             est laborum et dolorum fuga. Et harum quidem rerum facílis est et expedita distinctio.
                         </p>
-                        <input type="button" id="" value="Get to know me better" class="boton" onclick="alert('hola')">
+                        <input type="button" id="" value="Get to know me better" class="boton" onclick="alert('encontraste un easter egg <3')">
 
                     </div>
 
@@ -222,14 +163,14 @@
                     post per page
                 </div>
                 <div class="seleccionPaginas" id="seleccionPaginas">
-                    <input type="button" value="<" class="botonesPaginas">
+                    <input type="button" value="<" class="botonesPaginas" onclick="elegirPagina(-1)">
                     <input type="button" value="1" class="botonesPaginas" id="seleccionPaginas1"
-                        onclick="elegirPagina(this.value)">
+                        onclick="elegirPagina(parseInt(this.value))" style="border: 2px solid black;">
                     <input type="button" value="2" class="botonesPaginas" id="seleccionPaginas2"
-                        onclick="elegirPagina(this.value)">
+                        onclick="elegirPagina(parseInt(this.value))">
                     <input type="button" value="3" class="botonesPaginas" id="seleccionPaginas3"
-                        onclick="elegirPagina(this.value)">
-                    <input type="button" value=">" class="botonesPaginas">
+                        onclick="elegirPagina(parseInt(this.value))">
+                    <input type="button" value=">" class="botonesPaginas" onclick="elegirPagina(0)">
                 </div>
 
             </div>
