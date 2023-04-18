@@ -1,13 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css">
+
+    <script>
+        var paginaActual = 1;
+        var paginas;
+        function cambiarCantidadPaginas() {
+            if (document.getElementById("numeroOpciones").value == 3) {
+                paginas = 3;
+                document.getElementById("seleccionPaginas").style.display = "none";
+                document.getElementById("imagen3").style.display = "";
+                document.getElementById("imagen2").style.display = "";
+                document.getElementById("imagen1").style.display = "";
+
+            } else if (document.getElementById("numeroOpciones").value == 2) {
+                paginas = 2;
+                document.getElementById("seleccionPaginas").style.display = "";
+                document.getElementById("seleccionPaginas3").style.display = "none";
+                document.getElementById("imagen3").style.display = "none";
+                document.getElementById("imagen2").style.display = "";
+                document.getElementById("imagen1").style.display = "";
+
+            } else {
+                paginas = 1;
+                document.getElementById("seleccionPaginas").style.display = "";
+                document.getElementById("seleccionPaginas3").style.display = "";
+                document.getElementById("imagen3").style.display = "none";
+                document.getElementById("imagen2").style.display = "none";
+                document.getElementById("imagen1").style.display = "";
+            }
+        }
+
+        function elegirPagina(valor) {
+            paginaActual = valor;
+
+            if (paginas == 1) {
+                if (paginaActual == 1) {
+                    document.getElementById("imagen3").style.display = "none";
+                    document.getElementById("imagen2").style.display = "none";
+                    document.getElementById("imagen1").style.display = "";
+                } else if (paginaActual == 2) {
+                    document.getElementById("imagen3").style.display = "none";
+                    document.getElementById("imagen2").style.display = "";
+                    document.getElementById("imagen1").style.display = "none";
+                } else {
+                    document.getElementById("imagen3").style.display = "";
+                    document.getElementById("imagen2").style.display = "none";
+                    document.getElementById("imagen1").style.display = "none";
+                }
+            } else if (paginas == 2) {
+                if (paginaActual == 1) {
+                    document.getElementById("imagen3").style.display = "none";
+                    document.getElementById("imagen2").style.display = "";
+                    document.getElementById("imagen1").style.display = "";
+                } else {
+                    document.getElementById("imagen3").style.display = "";
+                    document.getElementById("imagen2").style.display = "none";
+                    document.getElementById("imagen1").style.display = "none";
+                }
+            }
+
+        }
+    </script>
+
 </head>
-<body>
+
+<body onload="cambiarCantidadPaginas()">
     <div class="general">
         <div class="header">
             <div class="HI">
@@ -43,9 +107,130 @@
         </div>
         <div class="mid">
             <div class="comidas">
+                <div class="señora">
+                    <div class="imagen">
+                        <img src="./recursos/bg-food.jpeg" style="width: 400px; border-radius: 0.8rem;">
+                    </div>
+                    <div class="texto">
+                        <h2>Hi! I am Amelie</h2>
+                        <p>Amateur chef and creator of this blog</p>
+                        <p>
+                            At vero eos et accusamus et íusto odio dignissimos ducimus qui blanditiis praesentium
+                            voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sínt occaecati
+                            cupiditate non provident, símilique sunt in culpa qui officia deserunt mollitia animi, id
+                            est laborum et dolorum fuga. Et harum quidem rerum facílis est et expedita distinctio.
+                        </p>
+                        <input type="button" id="" value="Get to know me better" class="boton" onclick="alert('hola')">
 
+                    </div>
+
+                </div>
+                <br><br>
+                <div class="platos" id="imagen1">
+                    <img src="./recursos/image-01.png" class="imagenesPlatos">
+                    <div class="texto">
+
+                        <div class="preparacion">
+                            <img src="./recursos/reloj.png" class="iconos">
+                            <p>10 min -- 6-8 portions</p>
+                        </div>
+
+                        <h1>Asian Chilli Garlic Shrimps</h1>
+                        <p>
+                            Dignissim suspendisse in est ante in nibh mauris cursus mattis. Tempor id eu nisl nunc mi.
+                            Scelerisque eu ultrices vitae auctor. Ut faucibus pulvinar elementum integer. Sed vulputate
+                            mi
+                            sit amet mauris commodo. In eu mi bibendum neque...
+                        </p>
+                        <div class="fecha">
+                            4
+                            <img src="./recursos/chat.png" class="iconos">
+                            Oct 29 |
+                            <img src="./recursos/calendario.png" class="iconos">
+                            <p></p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <br><br>
+
+                <div class="platos" id="imagen2">
+                    <img src="./recursos/image-02.png" class="imagenesPlatos">
+                    <div class="texto">
+
+                        <div class="preparacion">
+                            <img src="./recursos/camara.webp" class="iconos">
+                            <p>12:49</p>
+                        </div>
+
+                        <h1>Asian Chilli Garlic Shrimps</h1>
+                        <p>
+                            Dignissim suspendisse in est ante in nibh mauris cursus mattis. Tempor id eu nisl nunc mi.
+                            Scelerisque eu ultrices vitae auctor. Ut faucibus pulvinar elementum integer. Sed vulputate
+                            mi
+                            sit amet mauris commodo. In eu mi bibendum neque...
+                        </p>
+                        <div class="fecha">
+                            2
+                            <img src="./recursos/chat.png" class="iconos">
+                            Oct 17 |
+                            <img src="./recursos/calendario.png" class="iconos">
+                            <p></p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <br><br>
+
+                <div class="platos" id="imagen3">
+                    <img src="./recursos/image-03.png" class="imagenesPlatos">
+                    <div class="texto">
+
+                        <div class="preparacion">
+                            <img src="./recursos/reloj.png" class="iconos">
+                            <p>10 min -- 2-4 portions</p>
+                        </div>
+
+                        <h1>Asian Chilli Garlic Shrimps</h1>
+                        <p>
+                            Dignissim suspendisse in est ante in nibh mauris cursus mattis. Tempor id eu nisl nunc mi.
+                            Scelerisque eu ultrices vitae auctor. Ut faucibus pulvinar elementum integer. Sed vulputate
+                            mi
+                            sit amet mauris commodo. In eu mi bibendum neque...
+                        </p>
+                        <div class="fecha">
+                            1
+                            <img src="./recursos/chat.png" class="iconos">
+                            Oct 2 |
+                            <img src="./recursos/calendario.png" class="iconos">
+                            <p></p>
+                        </div>
+                    </div>
+
+                </div>
             </div>
             <div class="paginas">
+                <div>
+                    show
+                    <select id="numeroOpciones" onchange="cambiarCantidadPaginas()">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3" selected>3</option>
+                    </select>
+                    post per page
+                </div>
+                <div class="seleccionPaginas" id="seleccionPaginas">
+                    <input type="button" value="<" class="botonesPaginas">
+                    <input type="button" value="1" class="botonesPaginas" id="seleccionPaginas1"
+                        onclick="elegirPagina(this.value)">
+                    <input type="button" value="2" class="botonesPaginas" id="seleccionPaginas2"
+                        onclick="elegirPagina(this.value)">
+                    <input type="button" value="3" class="botonesPaginas" id="seleccionPaginas3"
+                        onclick="elegirPagina(this.value)">
+                    <input type="button" value=">" class="botonesPaginas">
+                </div>
 
             </div>
 
